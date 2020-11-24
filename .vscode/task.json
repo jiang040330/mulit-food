@@ -1,0 +1,11 @@
+{
+    "python.autoComplete.addBrackets": true,
+    "python.autoComplete.extraPaths": [
+        "D:\\ProgramData\\Anaconda3\\envs\\py36",
+        "D:\\ProgramData\\Anaconda3\\envs\\py36\\Lib\\site-packages"
+    ],
+    "python.pythonPath": "D:\\ProgramData\\Anaconda3\\python.exe",
+
+    "team.showWelcomeMessage": false,
+    "terminal.integrated.rendererType": "dom"
+}
