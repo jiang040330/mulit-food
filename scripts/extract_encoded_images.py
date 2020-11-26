@@ -2,7 +2,7 @@ import os
 import shutil
 import sys
 
-sys.path.append(r'/home/jby/00project/mulit-food/')
+sys.path.append(r'/home/jby/00project/multi-food/')
 print(sys.path)
 from dataManagement.DataHelper import DataHelper
 from dataManagement.DataLoader import DataLoader

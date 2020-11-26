@@ -1,5 +1,5 @@
 num_words_to_keep;30000;int
-num_words_x_doc;100;int
+num_words_x_doc;200;int
 output_image_width;100;int
 encoding_height;1;int
 save_model_dir_name;runs/ferramenta;str
