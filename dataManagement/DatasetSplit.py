@@ -13,7 +13,7 @@ class DatasetSplit(object):
                 #line[0]变为一个文本文件
                 #self.texts.append(line[0])
                 with open(line[0]) as txtf:
-                    eletxt = txtf.read()
+                    eletxt = txtf.read().replace('#',' ').replace('\n',' ')
                     self.texts.append(eletxt)
                     
                 self.labels.append(line[1])
