@@ -105,6 +105,7 @@ class EncodingExtractor(object):
 
         for image, path in zip(img_sum, test_img):
             dir_names = path.split('/')[-3:]
+            full_dir = os.path.join(root_dir,os.path.join(dir_names[0], dir_names[1]))
             full_path = os.path.join(root_dir,
                                      os.path.join(dir_names[0], dir_names[1], dir_names[2].replace('.jpg', '.png')))
 
@@ -143,7 +144,8 @@ class EncodingExtractor(object):
 
                     sp_i += 1
                     spw += 1
-
+            if not os.path.exists(full_dir):
+                os.makedirs(full_dir)
             cv2.imwrite(full_path, img)
 
     def compute_and_print_accuracy(self, correct, split_dataset_length, phase):
